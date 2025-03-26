@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'arcadegamer'; /* Nombre de la fuente */
+    src: url('/Hackbyte/styles/ArcadeGamer.woff2') format('truetype');
+}
+
+:root{ /*    Definir colores para mi pagina      */
+    --interfaz: #FF8200;
+    --font:'arcadegamer', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --titulos:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+} 
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+
+/*      JAVASCRIPT STYLES       */
+
+.hover-text {
+    font-family: var(--font);
+    font-style: bold;
+    font-size: 16px; /* Tamaño de fuente pequeño */
+    position: fixed; /* Coloca el texto fuera del flujo normal */
+    margin-left: -30px;
+    margin-top: -19px;
+    padding: 2px; /* Espaciado opcional */
+    color: #000000; /* Color de texto opcional */
+}
+
+
+/*      NAVBAR      */
+/*      NAVBAR      */
+/*      NAVBAR      */
+.navbar-container{ /*       Esta es la caja que contiene el navbar      */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.navbar-logo{
+    margin-top: 3rem;
+    margin-left: -9.50rem;
+    width: 250px;
+    height: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    /*  otros estilos  */
+    list-style: none;
+    background-color: var(--interfaz);
+    margin: 2em;
+    border-radius: 30px;
+    width: 1250px;
+    height: 50px;
+}
+.navbar-link{
+    font-family: var(--font);
+    font-size: 15px;
+    margin: 60px;
+}
+
+.navbar-link a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+
+.navbar-link a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+/*      SOCIALS-CONTACT (dentro del main-container)     */
+/*      SOCIALS-CONTACT (dentro del main-container)     */
+/*      SOCIALS-CONTACT (dentro del main-container)     */
+.socials-container {
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center; /* Centra verticalmente */
+    background-color: var(--interfaz);
+    border-radius: 15px;
+    position:fixed;
+    right: 20px; /* Posición a la derecha con margen de 20px */
+    height: 200px;
+    width: auto;
+    margin-top: 50vh;
+}
+
+
+/*      CONTENIDO DE LA PAGINA      */
+/*      CONTENIDO DE LA PAGINA      */
+/*      CONTENIDO DE LA PAGINA      */
+#canvas3d{
+    display: block;
+    }
+
+#canvas2d{
+    display: none;
+    }
+
+.main-container{
+    display: grid;
+    justify-content: center;
+    font-family: var(--titulos);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.main-container h1{
+    color: #09f;
+    font-size: 40px;
+    margin: 50px 0px 0px 0px;
+}
+.main-container p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.main-container button{
+    background-color: var(--interfaz);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: var(--font);
+    margin: 50px;
+}
+.main-container button:hover{
+    color:#ffffff;
+}
+
+.button-link{
+    font-family: var(--font);
+    text-decoration: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.button-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+    /*      CAJA DE SERVICIOS       */
+    
+.seccion-servicios{
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    border:1px solid #09f;
+    width: 100%;
+    grid-template-columns: 400px 400px 400px;
+    margin: 100px;
+    gap:50px;
+}
+ 
+.seccion-servicios .articulos{ /* NO SE TOCA */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    width: 100%;
+    border:1px solid rgb(0, 0, 0);
+}
+
+.articulos button{
+    background-color: var(--interfaz);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: var(--font);
+    margin: 50px;
+}
+.articulos button:hover{
+    color:#ffffff;
+}
